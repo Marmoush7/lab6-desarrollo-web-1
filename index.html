@@ -1,2 +1,238 @@
-<!-- TODO: construye aquí tu página (Lab #6) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club de robótica</title>
+  <meta name="description" content="Club de robótica universitario. Construye, programa y compite con robots de todo tipo.">
+  <meta name="author" content="Omar Mojica">
+  <meta name="codigo-sesion" content="LAB6-V9S3">
+  
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/estilos.css">
+  
+  <!-- CSS interno -->
+  <style>
+    body { margin: 0; }
+  </style>
+  
+  <script src="js/app.js" defer></script>
+</head>
+<body class="lab6-ia-8842">
+  <!-- verificado-por-ia -->
+
+  <header style="text-align: center; padding: 20px 0; background-color: #f8f9fa;">
+    <img 
+      src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=500&q=80" 
+      alt="Logo del Club de robótica" 
+      style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 4px solid #974420; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);"
+      loading="lazy">
+  </header>
+
+  <nav>
+    <a href="#info">Información</a>
+    <a href="#detalles">Detalles</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main id="ficha-1242" class="k-56cc8c">
+    <h1 style="text-align: center; letter-spacing: 1px;">Club de robótica</h1>
+
+    <section id="info">
+      <h2>Información del club</h2>
+      <p>
+        Únete al <strong>Club de robótica</strong> y aprende a construir y programar robots. 
+        Trabajamos con <em>Arduino</em>, <mark>Raspberry Pi</mark> y sistemas de visión. 
+        Las sesiones son los <time datetime="2026-09-23">miércoles a las 16:00</time>. 
+        Usa el código <code>ROBO26</code> y consulta la <abbr title="Federación Internacional de Robótica">IFR</abbr>.
+      </p>
+    </section>
+
+    <section id="detalles">
+      <h2>Detalles de las actividades</h2>
+      <ul>
+        <li>Día: Miércoles</li>
+        <li>Hora: 16:00 - 19:00</li>
+        <li>Lugar: Laboratorio de Electrónica</li>
+        <li>Cupos: Limitados</li>
+      </ul>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos activos</h2>
+      <ol>
+        <li>Robot seguidor de línea</li>
+        <li>Brazo robótico</li>
+        <li>Dron de vigilancia</li>
+      </ol>
+
+      <article>
+        <h3>Robot seguidor de línea</h3>
+        <p>Proyecto base con sensores infrarrojos y control PID.</p>
+      </article>
+      <article>
+        <h3>Brazo robótico</h3>
+        <p>Controlado por servomotores y interfaz gráfica.</p>
+      </article>
+      <article>
+        <h3>Dron de vigilancia</h3>
+        <p>Cuadricóptero con cámara y transmisión en tiempo real.</p>
+      </article>
+    </section>
+
+    <aside id="contacto">
+      <h2>Información adicional</h2>
+      <p>Trae tu laptop y ganas de experimentar. Se recomienda conocimiento básico de programación.</p>
+    </aside>
+
+    <details>
+      <summary>Preguntas frecuentes</summary>
+      <p>¿Necesito experiencia previa? No, empezamos desde cero.</p>
+      <p>¿Hay que pagar inscripción? No, es completamente gratuito.</p>
+    </details>
+
+    <dl>
+      <dt>Contacto</dt>
+      <dd>Email: club.robotica@universidad.edu</dd>
+      <dt>Responsable</dt>
+      <dd>Omar Mojica</dd>
+    </dl>
+
+    <figure>
+      <img src="img/festival.jpg" alt="Robot del club en competencia" loading="lazy">
+      <figcaption>Robot del Club de robótica en competencia</figcaption>
+    </figure>
+
+    <!-- Audio de sonido de robot -->
+    <audio controls>
+      <source src="https://assets.mixkit.co/active_storage/sfx/2874/2874-preview.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+
+    <!-- Video de YouTube incrustado -->
+    <iframe 
+      src="https://www.youtube.com/embed/eYpi4J8Cfss" 
+      title="Video promocional del Club de robótica" 
+      width="400" 
+      height="225" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen 
+      loading="lazy">
+    </iframe>
+
+    <section id="registro">
+      <h2>Registro al club</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Datos del interesado</legend>
+
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" maxlength="50" autocomplete="name">
+
+          <label for="email">Correo</label>
+          <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+
+          <label for="tel">Teléfono</label>
+          <input type="tel" id="tel" name="tel" pattern="[0-9]{10,}" placeholder="04141234567">
+
+          <label for="edad">Edad</label>
+          <input type="number" id="edad" name="edad" min="16" max="99" step="1">
+
+          <label for="fecha">Fecha de preferencia</label>
+          <input type="date" id="fecha" name="fecha">
+
+          <label for="clave">Contraseña de acceso</label>
+          <input type="password" id="clave" name="clave" minlength="6" required>
+
+          <label for="color">Color de identificación</label>
+          <input type="color" id="color" name="color" value="#974420">
+
+          <label for="rango">Nivel de interés (1-10)</label>
+          <input type="range" id="rango" name="rango" min="1" max="10" value="5">
+
+          <p>Tipo de participación:</p>
+          <label for="general">General</label>
+          <input type="radio" id="general" name="entrada" value="general" checked>
+          <label for="vip">Avanzado</label>
+          <input type="radio" id="vip" name="entrada" value="vip">
+
+          <label for="noticias">
+            <input type="checkbox" id="noticias" name="noticias" value="si"> Quiero recibir noticias del club
+          </label>
+
+          <label for="zona">Área de interés</label>
+          <select id="zona" name="zona">
+            <option value="movil">Robots móviles</option>
+            <option value="brazo">Brazos robóticos</option>
+            <option value="dron">Drones</option>
+          </select>
+
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe aquí..."></textarea>
+
+          <label for="busqueda">Buscar proyecto</label>
+          <input list="proyectos-lista" id="busqueda" name="busqueda">
+          <datalist id="proyectos-lista">
+            <option value="Seguidor de línea">
+            <option value="Brazo robótico">
+            <option value="Dron">
+          </datalist>
+
+          <button type="submit">Enviar registro</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <table>
+    <caption>Horarios y proyectos del Club de robótica</caption>
+    <thead>
+      <tr>
+        <th scope="col">Proyecto</th>
+        <th scope="col">Responsable</th>
+        <th scope="col">Día</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Seguidor de línea</td>
+        <td>Equipo A</td>
+        <td>Miércoles</td>
+      </tr>
+      <tr>
+        <td>Brazo robótico</td>
+        <td>Equipo B</td>
+        <td>Miércoles</td>
+      </tr>
+      <tr>
+        <td>Dron de vigilancia</td>
+        <td>Equipo C</td>
+        <td>Jueves</td>
+      </tr>
+      <tr>
+        <td>Robot sumo</td>
+        <td>Equipo D</td>
+        <td>Viernes</td>
+      </tr>
+      <tr>
+        <td>Visión artificial</td>
+        <td>Equipo E</td>
+        <td>Sábado</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total: 5 proyectos activos</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <footer>Omar Mojica</footer>
+
+  <noscript>
+    <p>Activa JavaScript para ver todas las funciones de esta página.</p>
+  </noscript>
+</body>
+</html><!-- TODO: construye aquí tu página (Lab #6) -->
  
